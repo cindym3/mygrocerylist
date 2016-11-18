@@ -1,0 +1,18 @@
+<div class="list">
+  <div class="add">
+    <p>Check the box to mark complete</p>
+    <a href="" ng-click="addItem()">+ Add a grocery item</a>
+  </div>
+  <div class="item" ng-class="{'editing-item' : editing, 'edited' : item.edited,
+  'completed': item.completed}"
+  ng-repeat="item in items | orderBy: 'completed'" ng-init="item.completed= false">
+    <input ng-model="item.completed" type="checkbox"/>
+    <label ng-click="editing = true" ng-hide="editing" class="editing-label" ng-click="helloWorld()">{{item.name}}</label>
+    <input ng-change="item.edited = true" ng-blur="editing = false;" ng-show="editing"
+    ng-model="item.name" class="editing-label" type="text"/>
+    <div class="actions">
+      <a href="" ng-click="saveItems(item)">Save</a>
+      <a href="" ng-click="deleteItem(item, $index)"class="Delete">Delete</a>
+    </div>
+  </div>
+</div>
