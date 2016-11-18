@@ -1,4 +1,4 @@
-The is a MEAN application that is used to create, read, update, and delete grocery list items.  This application is currently not live.  
+This grocery list app a MEAN application that is used to create, read, update, and delete (delete complete yet) grocery list items.  This application is currently not live.  
 
 Installation instructions:
 1. install node.js and npm - go to http://treehouse.github.io/installation-guides/ for instructions on installing on Windows, mac, and linux machines
@@ -21,7 +21,7 @@ npm install body-parser
 
 Steps to run app:
 1. Install modules in Installation instructions, via terminal
-2. In a second terminal, run nodemon to run express server
+2. In a second terminal, in root directory, run nodemonc/app.j s to run express server
 3. In a third terminal, run ./mongod from your MongoDB file path
 4. In a fourth terminal, run ./mongo from your MongoDB file path
 5. open browser to localhost:3001 (see src/app.js for port)
